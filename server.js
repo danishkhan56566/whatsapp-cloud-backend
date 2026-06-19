@@ -156,7 +156,22 @@ cron.schedule('* * * * *', async () => {
             writeDb(db);
         }
 
-    } catch (err) {
-        console.error("Schedule Check Error:", err);
+    } catch (e) {
+        console.error("Cron Job Error:", e);
     }
 });
+
+// --- Auto-Ping for Render Free Tier ---
+// Keeps the server awake without needing cron-job.org
+const RENDER_URL = process.env.RENDER_EXTERNAL_URL;
+if (RENDER_URL) {
+    console.log(`Self-pinging activated for: ${RENDER_URL}`);
+    setInterval(async () => {
+        try {
+            await fetch(RENDER_URL);
+            console.log(`[Keep-Awake] Pinged ${RENDER_URL}`);
+        } catch (err) {
+            console.error('[Keep-Awake] Ping failed:', err.message);
+        }
+    }, 14 * 60 * 1000); // 14 minutes
+}
