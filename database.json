@@ -1,0 +1,36 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "name": "Working hours (default)",
+      "target": "+3149509557",
+      "message": "This is your hi cheduled message!",
+      "schedule": {
+        "monday": [
+          "15:15"
+        ],
+        "tuesday": [
+          "08:45"
+        ],
+        "wednesday": [
+          "09:00"
+        ],
+        "thursday": [
+          "08:45"
+        ],
+        "friday": [
+          "15:22"
+        ],
+        "saturday": [],
+        "sunday": []
+      },
+      "lastRun": {
+        "friday": "15:22"
+      },
+      "groups": [
+        "120363046963701968@g.us",
+        "120363026629094413@g.us"
+      ]
+    }
+  ]
+}

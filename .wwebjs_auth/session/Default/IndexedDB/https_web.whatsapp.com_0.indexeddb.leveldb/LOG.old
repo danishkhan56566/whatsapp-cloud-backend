@@ -1,0 +1,27 @@
+2026/06/19-15:18:16.551 921a0a Reusing MANIFEST /Users/danishk/.gemini/antigravity-ide/scratch/whatsapp-cloud-backend/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/06/19-15:18:16.551 921a0a Recovering log #135
+2026/06/19-15:18:16.564 921a0a Reusing old log /Users/danishk/.gemini/antigravity-ide/scratch/whatsapp-cloud-backend/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000135.log 
+2026/06/19-15:18:17.516 921a0d Compacting 1@1 + 3@2 files
+2026/06/19-15:18:17.569 921a0d Generated table #138@1: 52317 keys, 2218361 bytes
+2026/06/19-15:18:17.604 921a0d Generated table #139@1: 19810 keys, 2186188 bytes
+2026/06/19-15:18:17.644 921a0d Generated table #140@1: 54856 keys, 2177175 bytes
+2026/06/19-15:18:17.644 921a0d Compacted 1@1 + 3@2 files => 6581724 bytes
+2026/06/19-15:18:17.647 921a0d compacted to: files[ 0 0 4 0 0 0 0 ]
+2026/06/19-15:18:17.647 921a0d Delete type=2 #136
+2026/06/19-15:18:17.647 921a0d Delete type=2 #131
+2026/06/19-15:18:17.647 921a0d Delete type=2 #132
+2026/06/19-15:18:17.647 921a0d Delete type=2 #133
+2026/06/19-15:18:25.412 921a0d Level-0 table #142: started
+2026/06/19-15:18:25.424 921a0d Level-0 table #142: 866711 bytes OK
+2026/06/19-15:18:25.428 921a0d Delete type=0 #135
+2026/06/19-15:18:25.586 921a0d Compacting 1@1 + 3@2 files
+2026/06/19-15:18:25.624 921a0d Generated table #143@1: 52569 keys, 2217512 bytes
+2026/06/19-15:18:25.651 921a0d Generated table #144@1: 21600 keys, 2185262 bytes
+2026/06/19-15:18:25.684 921a0d Generated table #145@1: 54876 keys, 2217079 bytes
+2026/06/19-15:18:25.687 921a0d Generated table #146@1: 1172 keys, 62267 bytes
+2026/06/19-15:18:25.687 921a0d Compacted 1@1 + 3@2 files => 6682120 bytes
+2026/06/19-15:18:25.690 921a0d compacted to: files[ 0 0 5 0 0 0 0 ]
+2026/06/19-15:18:25.691 921a0d Delete type=2 #138
+2026/06/19-15:18:25.691 921a0d Delete type=2 #139
+2026/06/19-15:18:25.691 921a0d Delete type=2 #140
+2026/06/19-15:18:25.691 921a0d Delete type=2 #142

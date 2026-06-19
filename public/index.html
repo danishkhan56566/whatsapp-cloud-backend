@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Schedules</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <a href="#" class="active">Schedules</a>
+        <a href="#">Calendar settings</a>
+        <a href="#">Advanced settings</a>
+    </nav>
+
+    <div class="container">
+        <header class="header-section">
+            <div class="profile-header">
+                <span class="label">Schedule</span>
+                <div class="dropdown-wrapper">
+                    <select id="profile-select" class="profile-select">
+                        <!-- Profiles populated here -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="active-on">
+                <strong>Active on:</strong> <span>1 target number</span>
+                <button id="edit-profile-btn" class="btn-text">Edit Details</button>
+                <button id="new-profile-btn" class="btn-text">+ New</button>
+            </div>
+
+            <div class="banner">
+                <span class="icon">!</span>
+                Apply this saved schedule to your WhatsApp contacts to send automated messages.
+            </div>
+        </header>
+
+        <main class="schedule-main">
+            <div class="main-headers">
+                <div class="left-col">
+                    <h3>Weekly hours</h3>
+                    <p>Set when messages should be sent</p>
+                </div>
+            </div>
+
+            <div id="schedule-list" class="schedule-list">
+                <!-- Days populated here -->
+            </div>
+            
+            <div class="save-bar">
+                <button id="save-btn" class="btn-primary">Save Changes</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Edit Profile Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-title">Edit Profile Details</h2>
+            <div class="form-group">
+                <label>Profile Name</label>
+                <input type="text" id="edit-name">
+            </div>
+            <div class="form-group">
+                <label>Target Number (No '+') - Optional</label>
+                <input type="text" id="edit-target" placeholder="e.g. 1234567890">
+            </div>
+            <div class="form-group">
+                <label>WhatsApp Groups</label>
+                <div id="groups-container" class="groups-container">
+                    <p class="loading-groups">Loading groups...</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Message Content</label>
+                <textarea id="edit-message" rows="4"></textarea>
+            </div>
+            <div class="modal-actions">
+                <button id="cancel-modal-btn" class="btn-text">Cancel</button>
+                <button id="save-modal-btn" class="btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
