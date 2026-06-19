@@ -2,13 +2,7 @@ services:
   - type: web
     name: whatsapp-bot
     env: docker
-    plan: starter
-    disk:
-      name: data
-      mountPath: /data
-      sizeGB: 1
+    plan: free
     envVars:
-      - key: DATA_DIR
-        value: /data
       - key: PORT
         value: 3000
