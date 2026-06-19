@@ -6,6 +6,7 @@ const dataDir = process.env.DATA_DIR || __dirname;
 const DB_FILE = path.join(dataDir, 'database.json');
 const express = require('express');
 const { Client, LocalAuth } = require('whatsapp-web.js');
+const qrcode = require('qrcode-terminal');
 
 // --- Express App Setup ---
 const app = express();
@@ -85,6 +86,11 @@ const client = new Client({
 });
 
 let isWhatsappReady = false;
+
+client.on('qr', (qr) => {
+    console.log('====== SCAN THIS QR CODE IN YOUR WHATSAPP ======');
+    qrcode.generate(qr, { small: true });
+});
 
 client.on('ready', () => {
     console.log('WhatsApp Client is ready! Bot is now running locally.');
